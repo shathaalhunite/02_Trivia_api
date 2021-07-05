@@ -1,0 +1,1569 @@
+2021-07-03 02:38:36,675 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:162]
+2021-07-03 02:39:50,318 ERROR: Exception on / [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1810, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1793, in raise_routing_exception
+    raise request.routing_exception
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\werkzeug\routing.py", line 1799, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1732, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1661, in handle_http_exception
+    return handler(e)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 143, in not_found_error
+    return render_template('errors/404.html'), 404
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: errors/404.html
+2021-07-03 02:39:51,000 ERROR: Exception on / [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1810, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1793, in raise_routing_exception
+    raise request.routing_exception
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\werkzeug\routing.py", line 1799, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1732, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1661, in handle_http_exception
+    return handler(e)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 143, in not_found_error
+    return render_template('errors/404.html'), 404
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: errors/404.html
+2021-07-03 02:39:51,546 ERROR: Exception on / [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1810, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1793, in raise_routing_exception
+    raise request.routing_exception
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\werkzeug\routing.py", line 1799, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1732, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1661, in handle_http_exception
+    return handler(e)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 143, in not_found_error
+    return render_template('errors/404.html'), 404
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: errors/404.html
+2021-07-03 02:39:51,993 ERROR: Exception on / [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1810, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1793, in raise_routing_exception
+    raise request.routing_exception
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\werkzeug\routing.py", line 1799, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1732, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1661, in handle_http_exception
+    return handler(e)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 143, in not_found_error
+    return render_template('errors/404.html'), 404
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: errors/404.html
+2021-07-03 02:39:52,441 ERROR: Exception on / [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1810, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1793, in raise_routing_exception
+    raise request.routing_exception
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\werkzeug\routing.py", line 1799, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1732, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1661, in handle_http_exception
+    return handler(e)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 143, in not_found_error
+    return render_template('errors/404.html'), 404
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: errors/404.html
+2021-07-03 02:39:52,792 ERROR: Exception on / [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1810, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1793, in raise_routing_exception
+    raise request.routing_exception
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\werkzeug\routing.py", line 1799, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1732, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1661, in handle_http_exception
+    return handler(e)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 143, in not_found_error
+    return render_template('errors/404.html'), 404
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: errors/404.html
+2021-07-03 02:39:53,001 ERROR: Exception on / [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1810, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1793, in raise_routing_exception
+    raise request.routing_exception
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\werkzeug\routing.py", line 1799, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1732, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1661, in handle_http_exception
+    return handler(e)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 143, in not_found_error
+    return render_template('errors/404.html'), 404
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: errors/404.html
+2021-07-03 02:39:53,193 ERROR: Exception on / [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1810, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1793, in raise_routing_exception
+    raise request.routing_exception
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\werkzeug\routing.py", line 1799, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1732, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1661, in handle_http_exception
+    return handler(e)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 143, in not_found_error
+    return render_template('errors/404.html'), 404
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: errors/404.html
+2021-07-03 02:39:53,385 ERROR: Exception on / [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1810, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1793, in raise_routing_exception
+    raise request.routing_exception
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\werkzeug\routing.py", line 1799, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1732, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1661, in handle_http_exception
+    return handler(e)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 143, in not_found_error
+    return render_template('errors/404.html'), 404
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: errors/404.html
+2021-07-03 02:39:53,553 ERROR: Exception on / [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1810, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1793, in raise_routing_exception
+    raise request.routing_exception
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\werkzeug\routing.py", line 1799, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1732, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1661, in handle_http_exception
+    return handler(e)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 143, in not_found_error
+    return render_template('errors/404.html'), 404
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: errors/404.html
+2021-07-03 02:39:53,730 ERROR: Exception on / [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1810, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1793, in raise_routing_exception
+    raise request.routing_exception
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\werkzeug\routing.py", line 1799, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1732, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1661, in handle_http_exception
+    return handler(e)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 143, in not_found_error
+    return render_template('errors/404.html'), 404
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: errors/404.html
+2021-07-03 02:39:53,901 ERROR: Exception on / [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1810, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1793, in raise_routing_exception
+    raise request.routing_exception
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\werkzeug\routing.py", line 1799, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1732, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1661, in handle_http_exception
+    return handler(e)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 143, in not_found_error
+    return render_template('errors/404.html'), 404
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: errors/404.html
+2021-07-03 02:39:54,066 ERROR: Exception on / [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1810, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1793, in raise_routing_exception
+    raise request.routing_exception
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\werkzeug\routing.py", line 1799, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1732, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1661, in handle_http_exception
+    return handler(e)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 143, in not_found_error
+    return render_template('errors/404.html'), 404
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: errors/404.html
+2021-07-03 02:39:54,234 ERROR: Exception on / [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1810, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1793, in raise_routing_exception
+    raise request.routing_exception
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\werkzeug\routing.py", line 1799, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1732, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1661, in handle_http_exception
+    return handler(e)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 143, in not_found_error
+    return render_template('errors/404.html'), 404
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: errors/404.html
+2021-07-03 02:39:54,368 ERROR: Exception on / [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1810, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1793, in raise_routing_exception
+    raise request.routing_exception
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\werkzeug\routing.py", line 1799, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1732, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1661, in handle_http_exception
+    return handler(e)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 143, in not_found_error
+    return render_template('errors/404.html'), 404
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: errors/404.html
+2021-07-03 02:40:17,325 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:162]
+2021-07-03 02:40:19,337 ERROR: Exception on / [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1810, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1793, in raise_routing_exception
+    raise request.routing_exception
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\werkzeug\routing.py", line 1799, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1732, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1661, in handle_http_exception
+    return handler(e)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 143, in not_found_error
+    return render_template('errors/404.html'), 404
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: errors/404.html
+2021-07-03 02:40:45,339 ERROR: Exception on / [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1810, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1793, in raise_routing_exception
+    raise request.routing_exception
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\werkzeug\routing.py", line 1799, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1732, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1661, in handle_http_exception
+    return handler(e)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 143, in not_found_error
+    return render_template('errors/404.html'), 404
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: errors/404.html
+2021-07-03 15:41:46,423 ERROR: Exception on / [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1810, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1793, in raise_routing_exception
+    raise request.routing_exception
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\werkzeug\routing.py", line 1799, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1732, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1661, in handle_http_exception
+    return handler(e)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 143, in not_found_error
+    return render_template('errors/404.html'), 404
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: errors/404.html
+2021-07-03 17:32:06,851 ERROR: Exception on / [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1810, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1793, in raise_routing_exception
+    raise request.routing_exception
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\werkzeug\routing.py", line 1799, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1732, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1661, in handle_http_exception
+    return handler(e)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 143, in not_found_error
+    return render_template('errors/404.html'), 404
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: errors/404.html
+2021-07-03 17:37:48,628 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:162]
+2021-07-03 17:39:27,169 ERROR: Exception on /question/5 [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: deleteQuestion() got an unexpected keyword argument 'id'
+2021-07-03 18:53:27,970 ERROR: Exception on /question/23/delete [DELETE] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1810, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1793, in raise_routing_exception
+    raise request.routing_exception
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\werkzeug\routing.py", line 1799, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1732, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1661, in handle_http_exception
+    return handler(e)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 143, in not_found_error
+    return jsonify({
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: errors/404.html
+2021-07-03 18:53:39,094 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:174]
+2021-07-03 18:53:41,459 ERROR: Exception on /question/23/delete [DELETE] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: deleteQuestion() got an unexpected keyword argument 'id'
+2021-07-03 20:15:52,629 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:176]
+2021-07-03 20:15:56,902 ERROR: Exception on /question/5 [DELETE] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 86, in deleteQuestion
+    formatted_question= [question.format() for question in question]
+TypeError: 'int' object is not iterable
+2021-07-03 20:16:03,320 ERROR: Exception on /question/23 [DELETE] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 86, in deleteQuestion
+    formatted_question= [question.format() for question in question]
+TypeError: 'int' object is not iterable
+2021-07-03 20:18:18,906 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:175]
+2021-07-03 20:21:47,059 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:175]
+2021-07-03 20:22:13,922 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:175]
+2021-07-03 20:23:39,600 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:176]
+2021-07-03 20:23:42,692 ERROR: Exception on /question/5 [DELETE] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 86, in deleteQuestion
+    question=Question.query.get(id=question_id)
+TypeError: get() got an unexpected keyword argument 'id'
+2021-07-03 20:23:48,490 ERROR: Exception on /question/5 [DELETE] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 86, in deleteQuestion
+    question=Question.query.get(id=question_id)
+TypeError: get() got an unexpected keyword argument 'id'
+2021-07-03 20:24:00,490 ERROR: Exception on /question/5 [DELETE] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 86, in deleteQuestion
+    question=Question.query.get(id=question_id).delete()
+TypeError: get() got an unexpected keyword argument 'id'
+2021-07-03 20:24:15,498 ERROR: Exception on /question/5 [DELETE] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 86, in deleteQuestion
+    question=Question.query.get(question_id).delete()
+TypeError: get() got an unexpected keyword argument 'id'
+2021-07-03 20:24:31,362 ERROR: Exception on /question/5 [DELETE] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 86, in deleteQuestion
+    question=Question.query.get().delete()
+TypeError: get() got an unexpected keyword argument 'id'
+2021-07-03 20:24:51,412 ERROR: Exception on /question/5 [DELETE] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 86, in deleteQuestion
+    return jsonify({
+TypeError: get() got an unexpected keyword argument 'id'
+2021-07-03 20:25:03,050 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:175]
+2021-07-03 20:25:45,316 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:176]
+2021-07-03 20:25:47,782 ERROR: Exception on /question/5 [DELETE] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 86, in deleteQuestion
+    formatted_question= [question.format() for question in question]
+TypeError: 'int' object is not iterable
+2021-07-03 20:28:05,730 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:176]
+2021-07-03 20:28:27,108 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:176]
+2021-07-03 20:50:52,192 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:177]
+2021-07-04 18:48:47,882 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:177]
+2021-07-04 19:29:39,026 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:173]
+2021-07-04 19:37:12,238 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:173]
+2021-07-04 19:40:17,989 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:178]
+2021-07-04 19:44:54,220 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:178]
+2021-07-04 19:46:45,970 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:178]
+2021-07-04 19:47:57,552 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:178]
+2021-07-04 19:50:00,775 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:178]
+2021-07-04 19:56:53,795 ERROR: Exception on /question/2 [DELETE] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 72, in deleteQuestion
+    question = Question.query.filter_by(id=id).one_or_none()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\orm\query.py", line 3250, in one_or_none
+    ret = list(self)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\orm\query.py", line 3323, in __iter__
+    return self._execute_and_instances(context)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\orm\query.py", line 3344, in _execute_and_instances
+    conn = self._get_bind_args(
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\orm\query.py", line 3359, in _get_bind_args
+    return fn(
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\orm\query.py", line 3338, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\orm\session.py", line 1120, in connection
+    return self._connection_for_bind(
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\orm\session.py", line 1128, in _connection_for_bind
+    return self.transaction._connection_for_bind(
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\orm\session.py", line 430, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\engine\base.py", line 2226, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\engine\base.py", line 2262, in _wrap_pool_connect
+    return fn()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\pool\base.py", line 363, in connect
+    return _ConnectionFairy._checkout(self)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\pool\base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\pool\impl.py", line 127, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30 (Background on this error at: http://sqlalche.me/e/3o7r)
+2021-07-04 19:57:03,956 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:178]
+2021-07-04 20:10:01,616 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:180]
+2021-07-04 20:18:43,231 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:179]
+2021-07-04 20:27:00,747 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:194]
+2021-07-04 20:48:30,425 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:174]
+2021-07-04 20:48:41,856 ERROR: Exception on /questions [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 43, in getQuestions
+    pagination = Question.query.all().paginate(page, per_page=10, error_out = False)
+AttributeError: 'list' object has no attribute 'paginate'
+2021-07-04 20:48:47,674 ERROR: Exception on /questions [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 43, in getQuestions
+    pagination = Question.query.all().paginate(page, per_page=10, error_out = False)
+AttributeError: 'list' object has no attribute 'paginate'
+2021-07-04 20:48:57,477 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:174]
+2021-07-04 20:49:00,640 ERROR: Exception on /questions [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 43, in getQuestions
+    pagination = Question.query.all().paginate(page, per_page=10, error_out = False)
+AttributeError: 'list' object has no attribute 'paginate'
+2021-07-04 20:49:48,398 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:174]
+2021-07-04 20:49:59,910 ERROR: Exception on /questions [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 51, in getQuestions
+    'total_questions':len(pagination.Total),
+AttributeError: 'Pagination' object has no attribute 'Total'
+2021-07-04 20:50:34,380 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:174]
+2021-07-04 20:50:44,272 ERROR: Exception on /questions [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 51, in getQuestions
+    'total_questions':len(pagination.total),
+TypeError: object of type 'int' has no len()
+2021-07-04 20:50:46,958 ERROR: Exception on /questions [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 51, in getQuestions
+    'total_questions':len(pagination.total),
+TypeError: object of type 'int' has no len()
+2021-07-04 20:52:11,010 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:174]
+2021-07-04 20:52:20,640 ERROR: Exception on /questions [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 48, in getQuestions
+    return jsonify({
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\json\__init__.py", line 351, in jsonify
+    dumps(data, indent=indent, separators=separators) + '\n',
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\json\__init__.py", line 194, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\json\__init__.py", line 81, in default
+    return _json.JSONEncoder.default(self, o)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Question is not JSON serializable
+2021-07-04 20:53:14,091 ERROR: Exception on /questions [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 48, in getQuestions
+    return jsonify({
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\json\__init__.py", line 351, in jsonify
+    dumps(data, indent=indent, separators=separators) + '\n',
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\json\__init__.py", line 194, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\json\__init__.py", line 81, in default
+    return _json.JSONEncoder.default(self, o)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Question is not JSON serializable
+2021-07-04 20:53:17,981 ERROR: Exception on /questions [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 48, in getQuestions
+    return jsonify({
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\json\__init__.py", line 351, in jsonify
+    dumps(data, indent=indent, separators=separators) + '\n',
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\json\__init__.py", line 194, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\json\__init__.py", line 81, in default
+    return _json.JSONEncoder.default(self, o)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Question is not JSON serializable
+2021-07-04 20:53:33,099 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:174]
+2021-07-04 20:53:35,352 ERROR: Exception on /questions [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 48, in getQuestions
+    return jsonify({
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\json\__init__.py", line 351, in jsonify
+    dumps(data, indent=indent, separators=separators) + '\n',
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\json\__init__.py", line 194, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\json\__init__.py", line 81, in default
+    return _json.JSONEncoder.default(self, o)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Question is not JSON serializable
+2021-07-04 20:55:18,450 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:175]
+2021-07-04 20:55:20,542 ERROR: Exception on /questions [GET] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 49, in getQuestions
+    return jsonify({
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\json\__init__.py", line 351, in jsonify
+    dumps(data, indent=indent, separators=separators) + '\n',
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\json\__init__.py", line 194, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\json\__init__.py", line 81, in default
+    return _json.JSONEncoder.default(self, o)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Question is not JSON serializable
+2021-07-04 20:57:29,452 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:174]
+2021-07-05 19:32:27,825 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:174]
+2021-07-05 19:36:37,697 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:186]
+2021-07-05 19:36:41,483 ERROR: Exception on /quizzes [POST] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 132, in quiz_question
+    return jsonify({
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\json\__init__.py", line 351, in jsonify
+    dumps(data, indent=indent, separators=separators) + '\n',
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\json\__init__.py", line 194, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\json\__init__.py", line 81, in default
+    return _json.JSONEncoder.default(self, o)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Question is not JSON serializable
+2021-07-05 19:38:24,487 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:190]
+2021-07-05 19:38:37,545 ERROR: Exception on /quizzes [POST] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 134, in quiz_question
+    'id': questions.id,
+AttributeError: 'list' object has no attribute 'id'
+2021-07-05 19:53:38,212 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:186]
+2021-07-05 19:53:51,295 ERROR: Exception on /quizzes [POST] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 134, in quiz_question
+    'question': questions.format()
+AttributeError: 'list' object has no attribute 'format'
+2021-07-05 19:56:29,790 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:213]
+2021-07-05 19:59:19,066 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:212]
+2021-07-05 20:05:02,865 ERROR: Exception on /quizzes [POST] [in c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py:1777]
+Traceback (most recent call last):
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py", line 131, in quiz_question
+    questions = Question.query.all()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\orm\query.py", line 3167, in all
+    return list(self)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\orm\query.py", line 3323, in __iter__
+    return self._execute_and_instances(context)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\orm\query.py", line 3344, in _execute_and_instances
+    conn = self._get_bind_args(
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\orm\query.py", line 3359, in _get_bind_args
+    return fn(
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\orm\query.py", line 3338, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\orm\session.py", line 1120, in connection
+    return self._connection_for_bind(
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\orm\session.py", line 1128, in _connection_for_bind
+    return self.transaction._connection_for_bind(
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\orm\session.py", line 430, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\engine\base.py", line 2226, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\engine\base.py", line 2262, in _wrap_pool_connect
+    return fn()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\pool\base.py", line 363, in connect
+    return _ConnectionFairy._checkout(self)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\pool\base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\pool\base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\pool\impl.py", line 127, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30 (Background on this error at: http://sqlalche.me/e/3o7r)
