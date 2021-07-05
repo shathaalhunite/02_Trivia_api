@@ -1567,3 +1567,4 @@ Traceback (most recent call last):
   File "c:\users\samis\appdata\local\programs\python\python39\lib\site-packages\sqlalchemy\pool\impl.py", line 127, in _do_get
     raise exc.TimeoutError(
 sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30 (Background on this error at: http://sqlalche.me/e/3o7r)
+2021-07-05 20:05:07,907 INFO: errors [in C:\Users\samis\myflask\02_trivia_api\starter\backend\flaskr\__init__.py:207]
