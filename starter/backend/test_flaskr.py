@@ -35,7 +35,6 @@ class TriviaTestCase(unittest.TestCase):
     def tearDown(self):
         """Executed after reach test"""
         pass
-
     def test_get_paginated_questions(self):
         response = self.client().get('/questions')
         data = json.loads(response.data)
@@ -90,8 +89,7 @@ class TriviaTestCase(unittest.TestCase):
         self.assertEqual(data['questions'][0]['id'], 23)
 
     def test_404_if_search_questions_fails(self):
-        response = self.client().post('/questions',
-                                      json={'searchTerm': 'abcdefghijk'})
+        response = self.client().post('/questions',json={'searchTerm': 'abcdefghijk'})
         data = json.loads(response.data)
         self.assertEqual(response.status_code, 404)
         self.assertEqual(data['success'], False)
@@ -113,7 +111,6 @@ class TriviaTestCase(unittest.TestCase):
         self.assertEqual(data['message'], 'bad request')
 
     def test_play_quiz_game(self):
-  
         response = self.client().post('/quizzes',json={'previous_questions': [20, 21],'quiz_category': {'type': 'Science', 'id': '1'}})
         data = json.loads(response.data)
         self.assertEqual(response.status_code, 200)
