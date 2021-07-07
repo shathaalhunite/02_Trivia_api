@@ -16,7 +16,6 @@ class TriviaTestCase(unittest.TestCase):
         self.client = self.app.test_client
         self.database_name = "postgres"
         self.database_path ="postgres://{}:{}@{}/{}".format('postgres','Shosho11','localhost:5432', self.database_name)
-        
         self.new_question = {
             'question': 'What actor did author Anne Rice first denounce, then praise in the role of her beloved Lestat?',
             'answer': 'Tom Cruise',
@@ -106,7 +105,7 @@ class TriviaTestCase(unittest.TestCase):
     def test_400_if_questions_by_category_fails(self):
         response = self.client().get('/categories/100/questions')
         data = json.loads(response.data)
-        self.assertEqual(response.status_code, 400)
+        self.assertEqual(response.status_code, 404)
         self.assertEqual(data['success'], False)
         self.assertEqual(data['message'], 'bad request')
 

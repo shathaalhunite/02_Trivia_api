@@ -99,6 +99,8 @@ def create_app(test_config=None):
   @app.route('/categories/<int:category_id>/questions')
   def get_questions_by_category(category_id):
     category =Category.query.filter_by(id=category_id).one_or_none()
+    if (category is None):
+            abort(404)
     questions =Question.query.filter_by(category=category.id).all()
     page = request.args.get('page', 1, type=int)
     start =  (page - 1) * Category_PER_PAGE
@@ -121,7 +123,8 @@ def create_app(test_config=None):
             questions = Question.query.all()
         else:
             questions = Question.query.filter_by(category=category['id']).all()    
-
+        if ((category is None) or (previous is None)):
+            abort(404)
         def used(question):
             used = False
             for q in previous:
