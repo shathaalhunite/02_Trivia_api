@@ -11,10 +11,9 @@ import logging
 QUESTIONS_PER_PAGE = 10
 Category_PER_PAGE = 10
 def create_app(test_config=None):
-  app = Flask(__name__)
-  setup_db(app)
+
   app = Flask(__name__, instance_relative_config=True)
-  
+  setup_db(app)
   CORS(app, resources={'/': {'origins': '*'}})
 
   @app.after_request
@@ -54,7 +53,6 @@ def create_app(test_config=None):
     'categories':categorie
       })
    
-  
   @app.route('/question/<int:id>', methods=['DELETE'])
   def deleteQuestion(id):
     question = Question.query.filter_by(id=id).one_or_none()
