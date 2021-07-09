@@ -23,8 +23,6 @@ class TriviaTestCase(unittest.TestCase):
             'category': '5'
         }
         setup_db(self.app, self.database_path)
-
-        # binds the app to the current context
         with self.app.app_context():
             self.db = SQLAlchemy()
             self.db.init_app(self.app)
@@ -61,7 +59,7 @@ class TriviaTestCase(unittest.TestCase):
     def test_404_if_question_does_not_exist(self):
         response = self.client().delete('/question/1')
         data = json.loads(response.data)
-        self.assertEqual(response.status_code, 422)
+        self.assertEqual(response.status_code, 404)
         self.assertEqual(data['success'], False)
         self.assertEqual(data['message'], 'unprocessable')
 
@@ -74,7 +72,7 @@ class TriviaTestCase(unittest.TestCase):
         self.assertEqual(data['success'], True)
 
     def test_422_if_question_creation_fails(self):
-        response = self.client().post('/questions', json={})
+        response = self.client().post('/questions/add', json={})
         data = json.loads(response.data)
         self.assertEqual(response.status_code, 422)
         self.assertEqual(data['success'], False)
@@ -102,7 +100,7 @@ class TriviaTestCase(unittest.TestCase):
         self.assertNotEqual(len(data['questions']), 0)
         self.assertEqual(data['current_category'], 'Science')
 
-    def test_400_if_questions_by_category_fails(self):
+    def test_404_if_questions_by_category_fails(self):
         response = self.client().get('/categories/100/questions')
         data = json.loads(response.data)
         self.assertEqual(response.status_code, 404)
@@ -110,7 +108,7 @@ class TriviaTestCase(unittest.TestCase):
         self.assertEqual(data['message'], 'bad request')
 
     def test_play_quiz_game(self):
-        response = self.client().post('/quizzes',json={'previous_questions': [20, 21],'quiz_category': {'type': 'Science', 'id': '1'}})
+        response = self.client().post('/quizzes',json={'previous_questions': [20, 21],'quiz_category': {'type': 'Science', 'id': 1}})
         data = json.loads(response.data)
         self.assertEqual(response.status_code, 200)
         self.assertEqual(data['success'], True)
@@ -127,8 +125,5 @@ class TriviaTestCase(unittest.TestCase):
         self.assertEqual(data['message'], 'bad request')
 
 
-
-
-# Make the tests conveniently executable
 if __name__ == "__main__":
     unittest.main()

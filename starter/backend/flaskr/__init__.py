@@ -1,4 +1,4 @@
-import os
+
 from flask import Flask, request, abort, jsonify
 from flask_sqlalchemy import SQLAlchemy
 import random
@@ -29,7 +29,8 @@ def create_app(test_config=None):
    end = start + QUESTIONS_PER_PAGE
    questions = Question.query.all()
    formatted_questions = [question.format() for question in questions]
-   
+   if (len(formatted_questions) == 0):
+          abort(404)
    categories = Category.query.all()
    categories_dict = {}
    for category in categories:
@@ -47,7 +48,8 @@ def create_app(test_config=None):
     categorie = {}
     for category in categories:
         categorie[category.id] = category.type
-
+    if (len(categorie) == 0):
+            abort(404)
     return jsonify({
     'success': True,
     'categories':categorie
@@ -56,6 +58,8 @@ def create_app(test_config=None):
   @app.route('/question/<int:id>', methods=['DELETE'])
   def deleteQuestion(id):
     question = Question.query.filter_by(id=id).one_or_none()
+    if question is None:
+         abort(404)
     question.delete()
     # formatted_question= [question.format() for question in question]
     return jsonify({
@@ -71,6 +75,8 @@ def create_app(test_config=None):
     body = request.get_json()
     search_term = body.get('searchTerm')
     questions = Question.query.filter(Question.question.ilike(f'%{search_term}%')).all()
+    if (len(questions) == 0):
+           abort(404)
     formatted_questions= [question.format() for question in questions]
     return jsonify({
                 'success': True,
@@ -85,8 +91,9 @@ def create_app(test_config=None):
       question=body.get('question'),
       answer=body.get('answer'),
       difficulty=body.get('difficulty'),
-      category=body.get('category')
-    )
+      category=body.get('category'))
+    if ((body.get('question') is None) or (body.get('answer') is None) or (body.get('difficulty') is None) or (body.get('category') is None)):
+        abort(422)
     questions.insert()
     return jsonify({
                     'success': True,
@@ -98,7 +105,7 @@ def create_app(test_config=None):
   def get_questions_by_category(category_id):
     category =Category.query.filter_by(id=category_id).one_or_none()
     if (category is None):
-            abort(404)
+        abort(404)
     questions =Question.query.filter_by(category=category.id).all()
     page = request.args.get('page', 1, type=int)
     start =  (page - 1) * Category_PER_PAGE
@@ -110,7 +117,6 @@ def create_app(test_config=None):
     'total_questions': len(Question.query.all()),
     'current_category': category.type
        })
-
   @app.route('/quizzes', methods=['POST'])
   def quiz_question():
     
@@ -122,16 +128,13 @@ def create_app(test_config=None):
         else:
             questions = Question.query.filter_by(category=category['id']).all()    
         if ((category is None) or (previous is None)):
-            abort(404)
+            abort(400)
         def used(question):
             used = False
             for q in previous:
                 if (q == question.id):
                     used = True
             return used
-
-        
-        
         question = questions[random.randrange(0, len(questions), 1)]
         while (used(question)):
             question = questions[random.randrange(0, len(questions), 1)]
