@@ -150,7 +150,7 @@ POST '/quizzes'
 ```
 
 ```js
-POST '/questions'
+POST '/questions/add'
 - Sends a post request in order to add a new question
 - Request Body: 
 {
