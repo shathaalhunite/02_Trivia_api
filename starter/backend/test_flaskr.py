@@ -14,7 +14,7 @@ class TriviaTestCase(unittest.TestCase):
         self.app = create_app()
         self.client = self.app.test_client
         self.database_name = "trivia_test"
-        self.database_path ="postgres://{}:{}@{}/{}".format('postgres','Shosho11','localhost:5432', self.database_name)
+        self.database_path ="postgresql://{}:{}@{}/{}".format('postgres','Shosho11','localhost:5432', self.database_name)
         self.new_question = {
             'question': 'What actor did author Anne Rice first denounce, then praise in the role of her beloved Lestat?',
             'answer': 'Tom Cruise',
@@ -54,7 +54,7 @@ class TriviaTestCase(unittest.TestCase):
         self.assertEqual(data['message'], 'Server Error')
 
     def test_delete_question(self):
-        #Make sure add the question=1 
+        #Make sure add the question=10
         response = self.client().delete('/question/10')
         data = json.loads(response.data)
         question = Question.query.filter(Question.id == 10).one_or_none()
@@ -119,9 +119,9 @@ class TriviaTestCase(unittest.TestCase):
     def test_400_play_quiz_fails(self):
         response = self.client().post('/quizzes', json={})
         data = json.loads(response.data)
-        self.assertEqual(response.status_code, 500)
+        self.assertEqual(response.status_code, 404)
         self.assertEqual(data['success'], False)
-        self.assertEqual(data['message'], 'Server Error')
+        self.assertEqual(data['message'], 'Not found')
 
 
 if __name__ == "__main__":

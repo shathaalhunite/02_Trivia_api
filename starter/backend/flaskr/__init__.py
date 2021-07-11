@@ -122,12 +122,11 @@ def create_app(test_config=None):
         body = request.get_json()
         previous = body.get('previous_questions')
         category = body.get('quiz_category')
-        print(category)
-        if (category['id'] == 0):
-             questions = Question.query.all()
+      
+        if (category['id'] ==0):
+              questions = Question.query.all()
         else:
-             questions = Question.query.filter_by(category=category['id']).all()  
-            
+              questions = Question.query.filter_by(category=category['id']).all()  
         if ((category is None) or (previous is None)):
               abort(400)
         def used(question):
@@ -137,6 +136,7 @@ def create_app(test_config=None):
                     used = True
             return used
         question = questions[random.randrange(0, len(questions), 1)]
+        print(question.format()) 
         while (used(question)):
             question = questions[random.randrange(0, len(questions), 1)]
             total = len(questions)
