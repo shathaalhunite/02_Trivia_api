@@ -59,9 +59,8 @@ def create_app(test_config=None):
   def deleteQuestion(id):
     question = Question.query.filter_by(id=id).one_or_none()
     if question is None:
-         abort(404)
+        abort(500)
     question.delete()
-    # formatted_question= [question.format() for question in question]
     return jsonify({
     'success': True,
     'deleted': id
@@ -76,7 +75,7 @@ def create_app(test_config=None):
     search_term = body.get('searchTerm')
     questions = Question.query.filter(Question.question.ilike(f'%{search_term}%')).all()
     if (len(questions) == 0):
-           abort(404)
+        abort(404)
     formatted_questions= [question.format() for question in questions]
     return jsonify({
                 'success': True,
@@ -123,12 +122,14 @@ def create_app(test_config=None):
         body = request.get_json()
         previous = body.get('previous_questions')
         category = body.get('quiz_category')
+        print(category)
         if (category['id'] == 0):
-            questions = Question.query.all()
+             questions = Question.query.all()
         else:
-            questions = Question.query.filter_by(category=category['id']).all()    
+             questions = Question.query.filter_by(category=category['id']).all()  
+            
         if ((category is None) or (previous is None)):
-            abort(400)
+              abort(400)
         def used(question):
             used = False
             for q in previous:
@@ -173,7 +174,7 @@ def create_app(test_config=None):
    return jsonify({
         "success": False, 
         "error": 422,
-        "message": "Not found"
+        "message": "Unprocessable Entity"
         }), 422
 
 
