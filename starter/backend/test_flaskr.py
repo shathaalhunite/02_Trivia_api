@@ -14,7 +14,7 @@ class TriviaTestCase(unittest.TestCase):
         self.app = create_app()
         self.client = self.app.test_client
         self.database_name = "trivia_test"
-        self.database_path ="postgresql://{}:{}@{}/{}".format('postgres','Shosho11','localhost:5432', self.database_name)
+        self.database_path = "postgresql://{}:{}@{}/{}".format('postgres', 'Shosho11', 'localhost:5432', self.database_name)
         self.new_question = {
             'question': 'What actor did author Anne Rice first denounce, then praise in the role of her beloved Lestat?',
             'answer': 'Tom Cruise',
@@ -31,6 +31,7 @@ class TriviaTestCase(unittest.TestCase):
     def tearDown(self):
         """Executed after reach test"""
         pass
+    
     def test_get_paginated_questions(self):
         response = self.client().get('/questions')
         data = json.loads(response.data)
@@ -45,7 +46,6 @@ class TriviaTestCase(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(data['success'], True)
   
-
     def test_404_if_question_does_not_exist(self):
         response = self.client().delete('/question/1')
         data = json.loads(response.data)
@@ -54,13 +54,11 @@ class TriviaTestCase(unittest.TestCase):
         self.assertEqual(data['message'], 'Server Error')
 
     def test_delete_question(self):
-        #Make sure add the question=10
         response = self.client().delete('/question/10')
         data = json.loads(response.data)
         question = Question.query.filter(Question.id == 10).one_or_none()
         self.assertEqual(response.status_code, 200)
         self.assertEqual(data['success'], True)
-        # self.assertEqual(data['deleted'], 1)
         self.assertEqual(question, None)
 
     def test_create_new_question(self):
@@ -88,7 +86,7 @@ class TriviaTestCase(unittest.TestCase):
         self.assertEqual(data['success'], True)
 
     def test_404_if_search_questions_fails(self):
-        response = self.client().post('/questions',json={'searchTerm': '123'})
+        response = self.client().post('/questions', json={'searchTerm': '123'})
         data = json.loads(response.data)
         self.assertEqual(response.status_code, 404)
         self.assertEqual(data['success'], False)
@@ -110,19 +108,32 @@ class TriviaTestCase(unittest.TestCase):
         self.assertEqual(data['message'], 'Not found')
 
     def test_play_quiz_game(self):
-       quiz = {'previous_questions': [],'quiz_category': {'type': 'Geography', 'id': 3}}
-       res = self.client().post('/quizzes', json=quiz)
-       data = json.loads(res.data)
-       self.assertEqual(res.status_code, 200)
-       self.assertEqual(data['success'], True)
+        quiz = {'previous_questions': [], 'quiz_category': {'type': 'Geography', 'id': 3}}
+        res = self.client().post('/quizzes', json=quiz)
+        data = json.loads(res.data)
+        self.assertEqual(res.status_code, 200)
+        self.assertEqual(data['success'], True)
 
     def test_400_play_quiz_fails(self):
         response = self.client().post('/quizzes', json={})
         data = json.loads(response.data)
-        self.assertEqual(response.status_code, 404)
+        self.assertEqual(response.status_code, 500)
+        self.assertEqual(data['success'], False)
+        self.assertEqual(data['message'], 'Server Error')
+
+    def test_get_categories(self):
+        res = self.client().get('/categories')
+        data = json.loads(res.data)
+        self.assertEqual(res.status_code, 200)
+        self.assertEqual(data['success'], True)
+        self.assertTrue(len(data['categories']))
+
+    def test_404_sent_requesting_non_existing_category(self):
+        res = self.client().get('/categories/111111')
+        data = json.loads(res.data)
+        self.assertEqual(res.status_code, 404)
         self.assertEqual(data['success'], False)
         self.assertEqual(data['message'], 'Not found')
-
-
+        
 if __name__ == "__main__":
-     unittest.main()
+    unittest.main()
